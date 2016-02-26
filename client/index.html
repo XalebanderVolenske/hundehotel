@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Zum goldenen Knochnen</title>
+    <meta name="description" content="Zum goldenen Knochen App">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet"
+          href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="framework.js"></script>
+</head>
+
+<style>
+    body {
+        padding-top: 40px;
+    }
+
+    canvas {
+        display: block;
+        margin: auto;
+        background-color: #000000;
+    }
+
+    .jumbotron {
+        position: relative;
+        background: #FFFFFF url("images/one.jpeg") center center;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        overflow: hidden;
+        padding-top: 500px;
+        padding-bottom: 500px;
+    }
+
+    .jumbotron h1 {
+        color: #fff;
+        font-family: 'Great Vibes', cursive;
+    }
+
+    .jumbotron p {
+        color: #fff;
+        font-family: 'Great Vibes', cursive;
+    }
+
+
+</style>
+
+<body data-spy="scroll" data-target="#my-navbar">
+<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+    <div class="container">
+        <a href="#canvas" class="btn btn-primary navbar-btn navbar-right">Spielen</a>
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="" class="navbar-brand">Zum goldenen Knochen</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#feedback">Feedback</a>
+                <li><a href="#gallery">Gallerie</a>
+                <li><a href="#offers">Angebote</a>
+                <li><a href="#faq">FAQ</a>
+                <li><a href="#contact">Kontakt</a>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- jumbotron -->
+
+<div class="jumbotron vertical-center">
+    <div class="container text-center ">
+        <h1>Zum goldenen Knochen</h1>
+        <p>We treat Dogs like Royals</p>
+        <a class="btn btn-primary btn-lg" href="#form_save" role="button">Buchen</a>
+    </div>
+</div>
+
+
+<div class="container">
+    <section>
+        <div class="page-header" id="feedback">
+            <h2>Feedback
+                <small>Was unsere kleinen Gäste sagen.</small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <blockquote>
+                    <p>Wir geben unsere Püppi bereits seit Jahren jeden Sommer im goldenen Knochen ab und es gefällt ihr
+                        sehr gut hier!
+                        Sie freut sich bereits auf Ihren nächsten Aufenthalt. :)</p>
+                    <footer>Tante Frieda</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote>
+                    <p>Verpflegung top.</p>
+                    <p>Zimmer top!</p>
+                    <p>Trainer top!</p>
+                    <p>Unser Hasso wollte gar nicht mehr heim!</p>
+                    <footer>Herr Rammelhofer</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote>
+                    <p>Besonders der Spa war für unsere Elfi ein Genuss.</p>
+                    <p>Kann den goldenen Knochen nur aufs Wärmste empfehlen!!</p>
+                    <footer>Guni Gundel</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section>
+        <div class="page-header" id="gallery">
+            <h2>Gallerie
+                <small>Werfen Sie einen Blick auf unsere atemberaubende Gallerie</small>
+            </h2>
+        </div>
+        <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+                <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+                <li data-target="#screenshot-carousel" data-slide-to="3"></li>
+                <li data-target="#screenshot-carousel" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/dog1.jpg" alt="Text of the image">
+                    <div class="carousel-caption">
+                        <h3>asödflajöowe</h3>
+                        <p>thiasdfkljöwiejfö</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/dog2.jpg" alt="Text of the image">
+                    <div class="carousel-caption">
+                        <h3>asödflajöowe</h3>
+                        <p>thiasdfkljöwiejfö</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/dog3.jpg" alt="Text of the image">
+                    <div class="carousel-caption">
+                        <h3>asödflajöowe</h3>
+                        <p>thiasdfkljöwiejfö</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/dog4.jpg" alt="Text of the image">
+                    <div class="carousel-caption">
+                        <h3>asödflajöowe</h3>
+                        <p>thiasdfkljöwiejfö</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/dog5.jpg" alt="Text of the image">
+                    <div class="carousel-caption">
+                        <h3>asödflajöowe</h3>
+                        <p>thiasdfkljöwiejfö</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+    </section>
+</div>
+<div class="container">
+    <section>
+        <div class="page-header" id="offers">
+            <h2>Angebote
+                <small> Für unsere Gäste halten wir eine Vielzahl an Angebote bereit</small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="images/pug.jpeg" alt="spa">
+                    <div class="caption">
+                        <h3>Spa & Wellness</h3>
+                        <p>Lorem ipsum dolor sit amet, ut cibo probo labore qui. Id est vidisse recteque. Admodum
+                            argumentum
+                            appellantur nam ei, ex mel sale illum recusabo. In sit nostro mediocrem salutandi, cu vim
+                            civibus
+                            interpretaris. Cum ex ponderum rationibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="images/weigth.jpeg" alt="fat">
+                    <div class="caption">
+                        <h3>"Fat Burning" Programm</h3>
+                        <p>Lorem ipsum dolor sit amet, ut cibo probo labore qui. Id est vidisse recteque. Admodum
+                            argumentum
+                            appellantur nam ei, ex mel sale illum recusabo. In sit nostro mediocrem salutandi, cu vim
+                            civibus
+                            interpretaris. Cum ex ponderum rationibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="images/dog6.jpg" alt="fitness">
+                    <div class="caption">
+                        <h3>Fitness</h3>
+                        <p>Lorem ipsum dolor sit amet, ut cibo probo labore qui. Id est vidisse recteque. Admodum
+                            argumentum
+                            appellantur nam ei, ex mel sale illum recusabo. In sit nostro mediocrem salutandi, cu vim
+                            civibus
+                            interpretaris. Cum ex ponderum rationibus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default text-center">
+                    <div class="panel-body">
+                        <span class="glyphicon glyphicon-ok"></span>
+                        <h4>Hydrotherapie</h4>
+                        <p>Lorem ipsum dolor sit amet, ut cibo probo labore qui. Id est vidisse recteque. Admodum
+                            argumentum
+                            appellantur nam ei, ex mel sale illum recusabo. In sit nostro mediocrem salutandi, cu vim
+                            civibus
+                            interpretaris. Cum ex ponderum rationibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default text-center">
+                    <div class="panel-body">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <h4>Fashion Shows</h4>
+                        <p>Lorem ipsum dolor sit amet, ut cibo probo labore qui. Id est vidisse recteque. Admodum
+                            argumentum
+                            appellantur nam ei, ex mel sale illum recusabo. In sit nostro mediocrem salutandi, cu vim
+                            civibus
+                            interpretaris. Cum ex ponderum rationibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default text-center">
+                    <div class="panel-body">
+                        <span class="glyphicon glyphicon-play-circle"></span>
+                        <h4>Boutique</h4>
+                        <p>Lorem ipsum dolor sit amet, ut cibo probo labore qui. Id est vidisse recteque. Admodum
+                            argumentum
+                            appellantur nam ei, ex mel sale illum recusabo. In sit nostro mediocrem salutandi, cu vim
+                            civibus
+                            interpretaris. Cum ex ponderum rationibus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function equalHeight(group) {
+            var tallest = 0;
+            group.each(function () {
+                var thisHeight = $(this).height();
+                if (thisHeight > tallest) {
+                    tallest = thisHeight;
+                }
+            });
+            group.each(function () {
+                $(this).height(tallest);
+            });
+        }
+
+        $(document).ready(function () {
+            equalHeight($(".thumbnail"));
+        });
+    </script>
+</div>
+
+<div class="container">
+    <section>
+        <div class="page-header" id="faq">
+            <h2>FAQ.
+                <small>Was unsere Kunden oft wissen wollen.</small>
+            </h2>
+        </div>
+        <div class="panel-group" id="accordion">
+            <div class="pane panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <a href="#collapse-1" data-toggle="collapse" data-parent="#accordion">
+                            Gibt es einen Tierarzt im Hotel?
+                        </a>
+                    </div>
+                    <div id="collapse-1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            Wieviele Suiten hat das Hotel?
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pane panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <a href="#collapse-2" data-toggle="collapse" data-parent="#accordion">
+                            Wird der Hummer im Napf oder am Teller serviert?
+                        </a>
+                    </div>
+                    <div id="collapse-2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            öalsdkfjöqwienyvl-cxknv.yblwuehfiansdc.aksn .jkn
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pane panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <a href="#collapse-3" data-toggle="collapse" data-parent="#accordion">
+                            Question three
+                        </a>
+                    </div>
+                    <div id="collapse-3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            öalsdkfjöqwienyvl-cxknv.yblwuehfiansdc.aksn .jkn
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div class="container">
+    <section>
+        <div class="page-header" id="contact">
+            <h2>Kontakt.
+                <small>Kontaktieren Sie uns.</small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p>Send us a message, or contact us from the address below</p>
+                <adress>
+                    <strong>Zum goldenen Knochen</strong></br>
+                    Landstraße 23 </br>
+                    Austria - 4060 Leonding</br>
+                    Telefon: 0123/1234 567
+                </adress>
+                <br>
+            </div>
+            <div class="col-md-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2656.9067409305662!2d14.242179915507343!3d48.24692265151809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47739688c317df47%3A0x94c16aa2c65fbedd!2sIm+B%C3%A4ckerfeld+16%2C+4060+Leonding!5e0!3m2!1sde!2sat!4v1455223579559"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="container">
+        <section>
+            <div class="page-header" id="booking">
+                <h2>Buchung.
+                    <small> Buchen Sie jetzt gleich für Ihren Vierbeiner.</small>
+                </h2>
+            </div>
+            <form id="form_save" action="#">
+                <!--von (dd-mm-yyyy): <input name="date_from" , id="date_from" type="date"/><br/>-->
+                <div class="row">
+                    Id: <span id="id"></span><br/>
+                    <div class="form-group">
+                        <div class="input-group">
+                            Dogname: <input name="dogname" , id="dogname" type="text"/>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <div class='input-group date' id="date_from1">
+                            <input type='text' class="form-control" name="date_from" id="date_from"/>
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <div class='input-group date' id="date_to1">
+                            <input type='text' class="form-control" name="date_to" id="date_to"/>
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <input id="save" name="save" value="Submit" type="submit"/>
+            </form>
+
+            <button id="load_bookings">Load Bookings</button>
+            <script type="text/javascript">
+                $(function () {
+                    $('#date_to1').datetimepicker({
+                        format: 'DD-MM-YYYY'
+                    });
+                    $('#date_from1').datetimepicker({
+                        format: 'DD-MM-YYYY',
+                        useCurrent: false //Important! See issue #1075
+                    });
+                    $("#date_from1").on("dp.change", function (e) {
+                        $('#date_to1').data("DateTimePicker").minDate(e.date);
+                    });
+                    $("#date_to1").on("dp.change", function (e) {
+                        $('#date_from1').data("DateTimePicker").maxDate(e.date);
+                    });
+                });
+            </script>
+
+            <!--
+                        bis (dd-mm-yyyy): <input name="date_to" , id="date_to" type="date"/><br/>-->
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Buchungen</div>
+                <!-- Table -->
+                <div id="bookings_table"></div>
+            </div>
+        </section>
+    </div>
+    <!-- Default panel contents -->
+    <div id="result"></div>
+    <div id="status"></div>
+    <div id="error"></div>
+
+    <div class="container text-center">
+        <section>
+            <div class="page-header" id="game">
+                <h2>Spiel.
+                    <small> Üben Sie sich ein wenig in Geschicklichkeit</small>
+                </h2>
+            </div>
+            <canvas id="canvas" width="700" height="400">
+                Your browser does not support HTML5 canvas.
+                If you would like to view, please update your browser.
+            </canvas>
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+        </section>
+
+        <br>
+
+        <ul class="list-inline">
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.youtube.com">Youtube</a></li>
+        </ul>
+
+        <p>Alexander Vollovec 2016</p>
+    </div>
+</footer>
+</body>
+<script src="bower_components/jquery/jquery.min.js"></script>
+<script src="bower_components/moment/min/moment.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+<script src="background.js"></script>
+<script src="player.js"></script>
+<script src="main.js"></script>
+<script src="booking.js"></script>
+<script src="config.js"></script>
+<<!--script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>-->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+        integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+
+</html>
